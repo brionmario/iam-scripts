@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "@brionmario/iam-scripts",
+  "version": "0.0.0",
+  "description": "Scripts, data seeders, etc that are useful for demos and testing of WSO2 IAM products.",
+  "keywords": [
+    "data-seeders",
+    "wso2-iam"
+  ],
+  "homepage": "https://github.com/brionmario/iam-scripts#readme",
+  "bugs": {
+    "url": "https://github.com/brionmario/iam-scripts/issues"
+  },
+  "license": "MIT",
+  "author": "Brion Mario",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brionmario/iam-scripts"
+  },
+  "scripts": {},
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5"
+  }
+}

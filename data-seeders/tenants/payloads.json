@@ -1,0 +1,524 @@
+{
+    "tenants": [
+        {
+            "domain": "techinnovators.com",
+            "owners": [
+                {
+                    "username": "john_doe",
+                    "password": "Tech@1234",
+                    "email": "john.doe@techinnovators.com",
+                    "firstname": "John",
+                    "lastname": "Doe",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "futurebuilders.org",
+            "owners": [
+                {
+                    "username": "jane_smith",
+                    "password": "Build#2024",
+                    "email": "jane.smith@futurebuilders.org",
+                    "firstname": "Jane",
+                    "lastname": "Smith",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "nextgenhealthcare.net",
+            "owners": [
+                {
+                    "username": "michael_brown",
+                    "password": "Health@789",
+                    "email": "michael.brown@nextgenhealthcare.net",
+                    "firstname": "Michael",
+                    "lastname": "Brown",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "greenerenergy.co",
+            "owners": [
+                {
+                    "username": "sophia_lee",
+                    "password": "GreenPower#2024",
+                    "email": "sophia.lee@greenerenergy.co",
+                    "firstname": "Sophia",
+                    "lastname": "Lee",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "innovateeducation.edu",
+            "owners": [
+                {
+                    "username": "emily_white",
+                    "password": "EduFuture@999",
+                    "email": "emily.white@innovateeducation.edu",
+                    "firstname": "Emily",
+                    "lastname": "White",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "aiinfinity.io",
+            "owners": [
+                {
+                    "username": "ethan_hall",
+                    "password": "AI@infinity2024",
+                    "email": "ethan.hall@aiinfinity.io",
+                    "firstname": "Ethan",
+                    "lastname": "Hall",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "fintechrevolution.com",
+            "owners": [
+                {
+                    "username": "ava_jones",
+                    "password": "FinTech@567",
+                    "email": "ava.jones@fintechrevolution.com",
+                    "firstname": "Ava",
+                    "lastname": "Jones",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "urbanplanners.org",
+            "owners": [
+                {
+                    "username": "liam_jackson",
+                    "password": "Urban@4567",
+                    "email": "liam.jackson@urbanplanners.org",
+                    "firstname": "Liam",
+                    "lastname": "Jackson",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "medtechsolutions.net",
+            "owners": [
+                {
+                    "username": "olivia_martin",
+                    "password": "MedTech@2024",
+                    "email": "olivia.martin@medtechsolutions.net",
+                    "firstname": "Olivia",
+                    "lastname": "Martin",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "ecoenterprise.co",
+            "owners": [
+                {
+                    "username": "mason_wilson",
+                    "password": "Eco@789",
+                    "email": "mason.wilson@ecoenterprise.co",
+                    "firstname": "Mason",
+                    "lastname": "Wilson",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "quantumfuture.tech",
+            "owners": [
+                {
+                    "username": "isabella_taylor",
+                    "password": "Quantum@123",
+                    "email": "isabella.taylor@quantumfuture.tech",
+                    "firstname": "Isabella",
+                    "lastname": "Taylor",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "cloudstream.io",
+            "owners": [
+                {
+                    "username": "logan_anderson",
+                    "password": "Cloud@stream",
+                    "email": "logan.anderson@cloudstream.io",
+                    "firstname": "Logan",
+                    "lastname": "Anderson",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "circularfashion.com",
+            "owners": [
+                {
+                    "username": "mia_thomas",
+                    "password": "Fashion#2024",
+                    "email": "mia.thomas@circularfashion.com",
+                    "firstname": "Mia",
+                    "lastname": "Thomas",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "smartcities.org",
+            "owners": [
+                {
+                    "username": "benjamin_hernandez",
+                    "password": "Smart@City123",
+                    "email": "benjamin.hernandez@smartcities.org",
+                    "firstname": "Benjamin",
+                    "lastname": "Hernandez",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "cleanenergyinitiative.co",
+            "owners": [
+                {
+                    "username": "charlotte_king",
+                    "password": "CleanEnergy@789",
+                    "email": "charlotte.king@cleanenergyinitiative.co",
+                    "firstname": "Charlotte",
+                    "lastname": "King",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "smartfarmers.io",
+            "owners": [
+                {
+                    "username": "henry_lee",
+                    "password": "Farm@smart2024",
+                    "email": "henry.lee@smartfarmers.io",
+                    "firstname": "Henry",
+                    "lastname": "Lee",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "spacetechnologies.org",
+            "owners": [
+                {
+                    "username": "amelia_clark",
+                    "password": "Space@456",
+                    "email": "amelia.clark@spacetechnologies.org",
+                    "firstname": "Amelia",
+                    "lastname": "Clark",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "roboticsfuture.com",
+            "owners": [
+                {
+                    "username": "jacob_moore",
+                    "password": "Robot@future",
+                    "email": "jacob.moore@roboticsfuture.com",
+                    "firstname": "Jacob",
+                    "lastname": "Moore",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "biotechinnovators.net",
+            "owners": [
+                {
+                    "username": "ava_taylor",
+                    "password": "BioTech@1234",
+                    "email": "ava.taylor@biotechinnovators.net",
+                    "firstname": "Ava",
+                    "lastname": "Taylor",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "globalventures.co",
+            "owners": [
+                {
+                    "username": "william_white",
+                    "password": "Venture@2024",
+                    "email": "william.white@globalventures.co",
+                    "firstname": "William",
+                    "lastname": "White",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "cleanearth.io",
+            "owners": [
+                {
+                    "username": "ella_baker",
+                    "password": "Clean@earth2024",
+                    "email": "ella.baker@cleanearth.io",
+                    "firstname": "Ella",
+                    "lastname": "Baker",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "virtualrealityhub.com",
+            "owners": [
+                {
+                    "username": "james_gonzalez",
+                    "password": "VR@hub2024",
+                    "email": "james.gonzalez@virtualrealityhub.com",
+                    "firstname": "James",
+                    "lastname": "Gonzalez",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "greenearthventures.org",
+            "owners": [
+                {
+                    "username": "grace_lopez",
+                    "password": "GreenEarth@789",
+                    "email": "grace.lopez@greenearthventures.org",
+                    "firstname": "Grace",
+                    "lastname": "Lopez",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "cybersecurityhub.net",
+            "owners": [
+                {
+                    "username": "harper_harris",
+                    "password": "Cyber@secure2024",
+                    "email": "harper.harris@cybersecurityhub.net",
+                    "firstname": "Harper",
+                    "lastname": "Harris",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "droneinnovations.co",
+            "owners": [
+                {
+                    "username": "jackson_evans",
+                    "password": "Drone@789",
+                    "email": "jackson.evans@droneinnovations.co",
+                    "firstname": "Jackson",
+                    "lastname": "Evans",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "climateactioninitiative.com",
+            "owners": [
+                {
+                    "username": "scarlett_murphy",
+                    "password": "Climate@789",
+                    "email": "scarlett.murphy@climateactioninitiative.com",
+                    "firstname": "Scarlett",
+                    "lastname": "Murphy",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "futurefinance.io",
+            "owners": [
+                {
+                    "username": "elijah_carter",
+                    "password": "Finance@future",
+                    "email": "elijah.carter@futurefinance.io",
+                    "firstname": "Elijah",
+                    "lastname": "Carter",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "artech.com",
+            "owners": [
+                {
+                    "username": "lily_green",
+                    "password": "ArtTech@1234",
+                    "email": "lily.green@artech.com",
+                    "firstname": "Lily",
+                    "lastname": "Green",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "nextgentechnologyhub.net",
+            "owners": [
+                {
+                    "username": "samuel_hill",
+                    "password": "TechHub@456",
+                    "email": "samuel.hill@nextgentechnologyhub.net",
+                    "firstname": "Samuel",
+                    "lastname": "Hill",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "blockchaininnovators.io",
+            "owners": [
+                {
+                    "username": "noah_scott",
+                    "password": "Blockchain@2024",
+                    "email": "noah.scott@blockchaininnovators.io",
+                    "firstname": "Noah",
+                    "lastname": "Scott",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "renewablefuture.org",
+            "owners": [
+                {
+                    "username": "emma_mitchell",
+                    "password": "Renewable@789",
+                    "email": "emma.mitchell@renewablefuture.org",
+                    "firstname": "Emma",
+                    "lastname": "Mitchell",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "smarttransportation.co",
+            "owners": [
+                {
+                    "username": "oliver_martinez",
+                    "password": "Transport@2024",
+                    "email": "oliver.martinez@smarttransportation.co",
+                    "firstname": "Oliver",
+                    "lastname": "Martinez",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "digitalhealthcare.io",
+            "owners": [
+                {
+                    "username": "sophia_rodriguez",
+                    "password": "Digital@health2024",
+                    "email": "sophia.rodriguez@digitalhealthcare.io",
+                    "firstname": "Sophia",
+                    "lastname": "Rodriguez",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "futuremobility.net",
+            "owners": [
+                {
+                    "username": "liam_hernandez",
+                    "password": "Mobility@2024",
+                    "email": "liam.hernandez@futuremobility.net",
+                    "firstname": "Liam",
+                    "lastname": "Hernandez",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "sustainableliving.org",
+            "owners": [
+                {
+                    "username": "mia_martin",
+                    "password": "Sustainable@2024",
+                    "email": "mia.martin@sustainableliving.org",
+                    "firstname": "Mia",
+                    "lastname": "Martin",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "futureofwork.io",
+            "owners": [
+                {
+                    "username": "jackson_lee",
+                    "password": "Work@future2024",
+                    "email": "jackson.lee@futureofwork.io",
+                    "firstname": "Jackson",
+                    "lastname": "Lee",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "smartagriculture.net",
+            "owners": [
+                {
+                    "username": "amelia_walker",
+                    "password": "Agri@smart2024",
+                    "email": "amelia.walker@smartagriculture.net",
+                    "firstname": "Amelia",
+                    "lastname": "Walker",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "futureenergy.io",
+            "owners": [
+                {
+                    "username": "lucas_hall",
+                    "password": "Energy@future2024",
+                    "email": "lucas.hall@futureenergy.io",
+                    "firstname": "Lucas",
+                    "lastname": "Hall",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "smartmanufacturing.org",
+            "owners": [
+                {
+                    "username": "ella_allen",
+                    "password": "Manufacture@2024",
+                    "email": "ella.allen@smartmanufacturing.org",
+                    "firstname": "Ella",
+                    "lastname": "Allen",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        },
+        {
+            "domain": "futurecities.co",
+            "owners": [
+                {
+                    "username": "mason_wright",
+                    "password": "Cities@future2024",
+                    "email": "mason.wright@futurecities.co",
+                    "firstname": "Mason",
+                    "lastname": "Wright",
+                    "provisioningMethod": "inline-password"
+                }
+            ]
+        }
+    ]
+}
