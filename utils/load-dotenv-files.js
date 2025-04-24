@@ -24,9 +24,14 @@
  * SOFTWARE.
  */
 
-const fs = require("fs");
-const path = require("path");
-const dotenv = require("dotenv");
+import fs from "fs";
+import path from "path";
+import dotenv from "dotenv";
+import { fileURLToPath } from "url";
+
+// Get the current directory name (ESM equivalent of __dirname)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Load environment variables from .env files in the following order:
 // .env.local, .env.development or .env.production, .env
@@ -36,7 +41,7 @@ const envFiles = [
   ".env"
 ];
 
-function loadEnvFiles(maxLevels = 5) {
+export default function loadEnvFiles(maxLevels = 5) {
   for (const file of envFiles) {
       let currentDir = __dirname;
       for (let i = 0; i <= maxLevels; i++) {
@@ -49,5 +54,3 @@ function loadEnvFiles(maxLevels = 5) {
       }
   }
 }
-
-module.exports = loadEnvFiles;

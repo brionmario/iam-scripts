@@ -1,0 +1,110 @@
+[
+    {
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png",
+        "isPrimary": false,
+        "roles": {
+            "mappings": [],
+            "outboundProvisioningRoles": []
+        },
+        "name": "Google",
+        "certificate": {
+            "certificates": []
+        },
+        "claims": {
+            "userIdClaim": {
+                "uri": "http://wso2.org/claims/username"
+            },
+            "roleClaim": {
+                "uri": "http://wso2.org/claims/role"
+            },
+            "provisioningClaims": []
+        },
+        "description": "Login users with existing Google accounts.",
+        "alias": "https://localhost:9444/oauth2/token",
+        "homeRealmIdentifier": "",
+        "federatedAuthenticators": {
+            "defaultAuthenticatorId": "R29vZ2xlT0lEQ0F1dGhlbnRpY2F0b3I",
+            "authenticators": [
+                {
+                    "isEnabled": true,
+                    "authenticatorId": "R29vZ2xlT0lEQ0F1dGhlbnRpY2F0b3I",
+                    "properties": [
+                        {
+                            "value": "{{GOOGLE_IDP_001_CLIENT_ID}}",
+                            "key": "ClientId"
+                        },
+                        {
+                            "value": "{{GOOGLE_IDP_001_CLIENT_SECRET}}",
+                            "key": "ClientSecret"
+                        },
+                        {
+                            "value": "{{IS_BASE_URL}}/commonauth",
+                            "key": "callbackUrl"
+                        },
+                        {
+                            "value": "scope=email openid profile",
+                            "key": "AdditionalQueryParameters"
+                        }
+                    ]
+                }
+            ]
+        },
+        "isFederationHub": false
+    },
+    {
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+        "isPrimary": false,
+        "roles": {
+            "mappings": [],
+            "outboundProvisioningRoles": []
+        },
+        "name": "GitHub",
+        "certificate": {
+            "certificates": []
+        },
+        "claims": {
+            "userIdClaim": {
+                "uri": "http://wso2.org/claims/username"
+            },
+            "roleClaim": {
+                "uri": "http://wso2.org/claims/role"
+            },
+            "provisioningClaims": []
+        },
+        "description": "Login users with existing GitHub accounts.",
+        "alias": "https://localhost:9444/oauth2/token",
+        "homeRealmIdentifier": "",
+        "federatedAuthenticators": {
+            "defaultAuthenticatorId": "R2l0aHViQXV0aGVudGljYXRvcg",
+            "authenticators": [
+                {
+                    "isEnabled": true,
+                    "authenticatorId": "R2l0aHViQXV0aGVudGljYXRvcg",
+                    "properties": [
+                        {
+                            "value": "{{IDP_SEEDER_GITHUB_001_CLIENT_ID}}",
+                            "key": "ClientId"
+                        },
+                        {
+                            "value": "{{IDP_SEEDER_GITHUB_001_CLIENT_SECRET}}",
+                            "key": "ClientSecret"
+                        },
+                        {
+                            "value": "{{IS_BASE_URL}}/commonauth",
+                            "key": "callbackUrl"
+                        },
+                        {
+                            "value": "user:email,read:user",
+                            "key": "scope"
+                        },
+                        {
+                            "value": "true",
+                            "key": "UsePrimaryEmail"
+                        }
+                    ]
+                }
+            ]
+        },
+        "isFederationHub": false
+    }
+]

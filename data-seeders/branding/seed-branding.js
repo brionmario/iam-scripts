@@ -46,12 +46,12 @@ if (!AUTHORIZATION) {
     process.exit(1);
 }
 
-async function createTenants(limit) {
+async function createOrgBranding(limit) {
     try {
         const data = fs.readFileSync(payloadFile, "utf8");
-        const tenants = JSON.parse(data);
+        const applications = JSON.parse(data);
 
-        if (!tenants || !tenants.tenants) {
+        if (!applications) {
             throw new Error("Invalid payload structure");
         }
 
@@ -59,13 +59,13 @@ async function createTenants(limit) {
             rejectUnauthorized: false
         });
 
-        for (let i = 0; i < limit && i < tenants.tenants.length; i++) {
-            const tenant = tenants.tenants[i];
+        for (let i = 0; i < limit && i < applications.length; i++) {
+            const application = applications[i];
 
-            console.log("Processing tenant:", tenant);
+            console.log("Processing application:", application);
 
             try {
-                const response = await axios.post(`${BASE_URL}/api/server/v1/tenants`, tenant, {
+                const response = await axios.post(`${BASE_URL}/api/server/v1/applications`, application, {
                     headers: {
                         "Content-Type": "application/json",
                         Authorization: AUTHORIZATION
@@ -73,10 +73,10 @@ async function createTenants(limit) {
                     httpsAgent: agent
                 });
 
-                console.log(`Tenant created: ${tenant.domain} - Response:`, response.data);
+                console.log(`Application created: ${application.name} - Response:`, response.data);
             } catch (error) {
                 console.error(
-                    `Failed to create tenant ${tenant.domain}:`,
+                    `Failed to create application ${application.name}:`,
                     error.response ? error.response.data : error.message
                 );
             }
@@ -86,7 +86,7 @@ async function createTenants(limit) {
     }
 }
 
-async function deleteTenants() {
+async function deleteApplications() {
     try {
         let response = null;
 
@@ -95,7 +95,7 @@ async function deleteTenants() {
         });
 
         try {
-            response = await axios.get(`${BASE_URL}/api/server/v1/tenants?limit=50`, {
+            response = await axios.get(`${BASE_URL}/api/server/v1/applications?limit=50`, {
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: AUTHORIZATION
@@ -103,19 +103,19 @@ async function deleteTenants() {
                 httpsAgent: agent
             });
         } catch (error) {
-            console.error("Failed to get tenants:", error.response ? error.response.data : error.message);
+            console.error("Failed to get applications:", error.response ? error.response.data : error.message);
         }
 
-        if (!response || !response.data.tenants) {
+        if (!response || !response.data.applications) {
             throw new Error("Invalid payload structure");
         }
 
-        for (const tenant of response.data.tenants) {
-            console.log("Processing tenant:", tenant);
+        for (const application of response.data.applications) {
+            console.log("Processing application:", application);
 
             try {
                 const response = await axios.delete(
-                    `${BASE_URL}/api/server/v1/tenants/${tenant.id}/metadata`,
+                    `${BASE_URL}/api/server/v1/applications/${application._id}`,
                     {
                         headers: {
                             "Content-Type": "application/json",
@@ -125,10 +125,10 @@ async function deleteTenants() {
                     }
                 );
 
-                console.log(`Tenant deleted: ${tenant.domain} - Response:`, response.data);
+                console.log(`Application deleted: ${application.name} - Response:`, response.data);
             } catch (error) {
                 console.error(
-                    `Failed to delete tenant ${tenant.domain}:`,
+                    `Failed to delete application ${application.name}:`,
                     error.response ? error.response.data : error.message
                 );
             }
@@ -143,9 +143,9 @@ const operation = args[0] || "create";
 const limit = parseInt(args[1], 10) || 40;
 
 if (operation === "create") {
-    createTenants(limit);
+    createOrgBranding(limit);
 } else if (operation === "delete") {
-    deleteTenants();
+    deleteApplications();
 } else {
     console.error("Invalid operation. Use 'create' or 'delete'.");
 }

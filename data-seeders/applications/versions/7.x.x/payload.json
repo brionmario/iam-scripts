@@ -1,0 +1,592 @@
+[
+    {
+        "name": "Finance App",
+        "imageUrl": "https://avatar.vercel.sh/finance",
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false,
+            "skipLogoutConsent": true,
+            "skipLoginConsent": true
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ]
+        },
+        "claimConfiguration": {
+            "dialect": "LOCAL",
+            "requestedClaims": [
+                {
+                    "claim": {
+                        "uri": "http://wso2.org/claims/username"
+                    }
+                }
+            ]
+        },
+        "inboundProtocolConfiguration": {
+            "oidc": {
+                "accessToken": {
+                    "applicationAccessTokenExpiryInSeconds": 3600,
+                    "bindingType": "sso-session",
+                    "revokeTokensWhenIDPSessionTerminated": true,
+                    "type": "Default",
+                    "userAccessTokenExpiryInSeconds": 3600,
+                    "validateTokenBinding": false
+                },
+                "grantTypes": [
+                    "authorization_code",
+                    "refresh_token"
+                ],
+                "allowedOrigins": [
+                    "https://test.com"
+                ],
+                "callbackURLs": [
+                    "https://test.com"
+                ],
+                "pkce": {
+                    "mandatory": true,
+                    "supportPlainTransformAlgorithm": false
+                },
+                "publicClient": true,
+                "refreshToken": {
+                    "expiryInSeconds": 86400,
+                    "renewRefreshToken": true
+                }
+            }
+        },
+        "templateId": "6a90e4b0-fbff-42d7-bfde-1efd98f07cd7",
+        "associatedRoles": {
+            "allowedAudience": "APPLICATION",
+            "roles": []
+        }
+    },
+    {
+        "name": "HR Suite",
+        "imageUrl": "https://avatar.vercel.sh/hr",
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false,
+            "skipLogoutConsent": true,
+            "skipLoginConsent": true
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ]
+        },
+        "claimConfiguration": {
+            "dialect": "LOCAL",
+            "requestedClaims": [
+                {
+                    "claim": {
+                        "uri": "http://wso2.org/claims/username"
+                    }
+                }
+            ]
+        },
+        "inboundProtocolConfiguration": {
+            "oidc": {
+                "accessToken": {
+                    "applicationAccessTokenExpiryInSeconds": 3600,
+                    "bindingType": "sso-session",
+                    "revokeTokensWhenIDPSessionTerminated": true,
+                    "type": "Default",
+                    "userAccessTokenExpiryInSeconds": 3600,
+                    "validateTokenBinding": false
+                },
+                "grantTypes": [
+                    "authorization_code",
+                    "refresh_token"
+                ],
+                "allowedOrigins": [
+                    "https://test.com"
+                ],
+                "callbackURLs": [
+                    "https://test.com"
+                ],
+                "pkce": {
+                    "mandatory": true,
+                    "supportPlainTransformAlgorithm": false
+                },
+                "publicClient": true,
+                "refreshToken": {
+                    "expiryInSeconds": 86400,
+                    "renewRefreshToken": true
+                }
+            }
+        },
+        "templateId": "6a90e4b0-fbff-42d7-bfde-1efd98f07cd7",
+        "associatedRoles": {
+            "allowedAudience": "APPLICATION",
+            "roles": []
+        }
+    },
+    {
+        "name": "Marketing Tool",
+        "imageUrl": "https://avatar.vercel.sh/marketing",
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false,
+            "skipLogoutConsent": true,
+            "skipLoginConsent": true
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ]
+        },
+        "claimConfiguration": {
+            "dialect": "LOCAL",
+            "requestedClaims": [
+                {
+                    "claim": {
+                        "uri": "http://wso2.org/claims/username"
+                    }
+                }
+            ]
+        },
+        "inboundProtocolConfiguration": {
+            "oidc": {
+                "accessToken": {
+                    "applicationAccessTokenExpiryInSeconds": 3600,
+                    "bindingType": "sso-session",
+                    "revokeTokensWhenIDPSessionTerminated": true,
+                    "type": "Default",
+                    "userAccessTokenExpiryInSeconds": 3600,
+                    "validateTokenBinding": false
+                },
+                "grantTypes": [
+                    "authorization_code",
+                    "refresh_token"
+                ],
+                "allowedOrigins": [
+                    "https://test.com"
+                ],
+                "callbackURLs": [
+                    "https://test.com"
+                ],
+                "pkce": {
+                    "mandatory": true,
+                    "supportPlainTransformAlgorithm": false
+                },
+                "publicClient": true,
+                "refreshToken": {
+                    "expiryInSeconds": 86400,
+                    "renewRefreshToken": true
+                }
+            }
+        },
+        "templateId": "6a90e4b0-fbff-42d7-bfde-1efd98f07cd7",
+        "associatedRoles": {
+            "allowedAudience": "APPLICATION",
+            "roles": []
+        }
+    },
+    {
+        "name": "Support Center",
+        "imageUrl": "https://avatar.vercel.sh/support",
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false,
+            "skipLogoutConsent": true,
+            "skipLoginConsent": true
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ]
+        },
+        "claimConfiguration": {
+            "dialect": "LOCAL",
+            "requestedClaims": [
+                {
+                    "claim": {
+                        "uri": "http://wso2.org/claims/username"
+                    }
+                }
+            ]
+        },
+        "inboundProtocolConfiguration": {
+            "oidc": {
+                "accessToken": {
+                    "applicationAccessTokenExpiryInSeconds": 3600,
+                    "bindingType": "sso-session",
+                    "revokeTokensWhenIDPSessionTerminated": true,
+                    "type": "Default",
+                    "userAccessTokenExpiryInSeconds": 3600,
+                    "validateTokenBinding": false
+                },
+                "grantTypes": [
+                    "authorization_code",
+                    "refresh_token"
+                ],
+                "allowedOrigins": [
+                    "https://test.com"
+                ],
+                "callbackURLs": [
+                    "https://test.com"
+                ],
+                "pkce": {
+                    "mandatory": true,
+                    "supportPlainTransformAlgorithm": false
+                },
+                "publicClient": true,
+                "refreshToken": {
+                    "expiryInSeconds": 86400,
+                    "renewRefreshToken": true
+                }
+            }
+        },
+        "templateId": "6a90e4b0-fbff-42d7-bfde-1efd98f07cd7",
+        "associatedRoles": {
+            "allowedAudience": "APPLICATION",
+            "roles": []
+        }
+    },
+    {
+        "name": "Analytics Dashboard",
+        "imageUrl": "https://avatar.vercel.sh/analytics",
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false,
+            "skipLogoutConsent": true,
+            "skipLoginConsent": true
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ]
+        },
+        "claimConfiguration": {
+            "dialect": "LOCAL",
+            "requestedClaims": [
+                {
+                    "claim": {
+                        "uri": "http://wso2.org/claims/username"
+                    }
+                }
+            ]
+        },
+        "inboundProtocolConfiguration": {
+            "oidc": {
+                "accessToken": {
+                    "applicationAccessTokenExpiryInSeconds": 3600,
+                    "bindingType": "sso-session",
+                    "revokeTokensWhenIDPSessionTerminated": true,
+                    "type": "Default",
+                    "userAccessTokenExpiryInSeconds": 3600,
+                    "validateTokenBinding": false
+                },
+                "grantTypes": [
+                    "authorization_code",
+                    "refresh_token"
+                ],
+                "allowedOrigins": [
+                    "https://test.com"
+                ],
+                "callbackURLs": [
+                    "https://test.com"
+                ],
+                "pkce": {
+                    "mandatory": true,
+                    "supportPlainTransformAlgorithm": false
+                },
+                "publicClient": true,
+                "refreshToken": {
+                    "expiryInSeconds": 86400,
+                    "renewRefreshToken": true
+                }
+            }
+        },
+        "templateId": "6a90e4b0-fbff-42d7-bfde-1efd98f07cd7",
+        "associatedRoles": {
+            "allowedAudience": "APPLICATION",
+            "roles": []
+        }
+    },
+    {
+        "name": "Salesforce",
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false,
+            "skipLogoutConsent": true,
+            "skipLoginConsent": true
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ]
+        },
+        "inboundProtocolConfiguration": {
+            "saml": {
+                "manualConfiguration": {
+                    "issuer": "saml2-web-app-salesforce.com",
+                    "assertionConsumerUrls": [
+                        "http://localhost.com:8080/saml2-web-app-salesforce.com/home.jsp"
+                    ],
+                    "attributeProfile": {
+                        "enabled": true,
+                        "alwaysIncludeAttributesInResponse": true
+                    },
+                    "singleLogoutProfile": {
+                        "enabled": true,
+                        "logoutMethod": "BACKCHANNEL",
+                        "idpInitiatedSingleLogout": {
+                            "enabled": false
+                        }
+                    }
+                }
+            }
+        },
+        "templateId": "776a73da-fd8e-490b-84ff-93009f8ede85",
+        "associatedRoles": {
+            "allowedAudience": "APPLICATION",
+            "roles": []
+        },
+        "imageUrl": "https://avatar.vercel.sh/salesforce"
+    },
+    {
+        "name": "Freshdesk",
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false,
+            "skipLogoutConsent": true,
+            "skipLoginConsent": true
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ]
+        },
+        "inboundProtocolConfiguration": {
+            "saml": {
+                "manualConfiguration": {
+                    "issuer": "saml2-web-app-freshdesk.com",
+                    "assertionConsumerUrls": [
+                        "http://localhost.com:8080/saml2-web-app-freshdesk.com/home.jsp"
+                    ],
+                    "attributeProfile": {
+                        "enabled": true,
+                        "alwaysIncludeAttributesInResponse": true
+                    },
+                    "singleLogoutProfile": {
+                        "enabled": true,
+                        "logoutMethod": "BACKCHANNEL",
+                        "idpInitiatedSingleLogout": {
+                            "enabled": false
+                        }
+                    }
+                }
+            }
+        },
+        "templateId": "776a73da-fd8e-490b-84ff-93009f8ede85",
+        "associatedRoles": {
+            "allowedAudience": "APPLICATION",
+            "roles": []
+        },
+        "imageUrl": "https://avatar.vercel.sh/freshdesk"
+    },
+    {
+        "name": "Zoho",
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false,
+            "skipLogoutConsent": true,
+            "skipLoginConsent": true
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ]
+        },
+        "inboundProtocolConfiguration": {
+            "saml": {
+                "manualConfiguration": {
+                    "issuer": "saml2-web-app-zoho.com",
+                    "assertionConsumerUrls": [
+                        "http://localhost.com:8080/saml2-web-app-zoho.com/home.jsp"
+                    ],
+                    "attributeProfile": {
+                        "enabled": true,
+                        "alwaysIncludeAttributesInResponse": true
+                    },
+                    "singleLogoutProfile": {
+                        "enabled": true,
+                        "logoutMethod": "BACKCHANNEL",
+                        "idpInitiatedSingleLogout": {
+                            "enabled": false
+                        }
+                    }
+                }
+            }
+        },
+        "templateId": "776a73da-fd8e-490b-84ff-93009f8ede85",
+        "associatedRoles": {
+            "allowedAudience": "APPLICATION",
+            "roles": []
+        },
+        "imageUrl": "https://avatar.vercel.sh/zoho"
+    },
+    {
+        "name": "AWS IAM Identity Center (Successor to AWS SSO)",
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false,
+            "skipLogoutConsent": true,
+            "skipLoginConsent": true
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ]
+        },
+        "inboundProtocolConfiguration": {
+            "saml": {
+                "manualConfiguration": {
+                    "issuer": "saml2-web-app-aws-iam.com",
+                    "assertionConsumerUrls": [
+                        "http://localhost.com:8080/saml2-web-app-aws-iam.com/home.jsp"
+                    ],
+                    "attributeProfile": {
+                        "enabled": true,
+                        "alwaysIncludeAttributesInResponse": true
+                    },
+                    "singleLogoutProfile": {
+                        "enabled": true,
+                        "logoutMethod": "BACKCHANNEL",
+                        "idpInitiatedSingleLogout": {
+                            "enabled": false
+                        }
+                    }
+                }
+            }
+        },
+        "templateId": "776a73da-fd8e-490b-84ff-93009f8ede85",
+        "associatedRoles": {
+            "allowedAudience": "APPLICATION",
+            "roles": []
+        },
+        "imageUrl": "https://avatar.vercel.sh/aws"
+    },
+    {
+        "name": "Google Workspace",
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false,
+            "skipLogoutConsent": true,
+            "skipLoginConsent": true
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ]
+        },
+        "inboundProtocolConfiguration": {
+            "saml": {
+                "manualConfiguration": {
+                    "issuer": "saml2-web-app-google-workspace.com",
+                    "assertionConsumerUrls": [
+                        "http://localhost.com:8080/saml2-web-app-google-workspace.com/home.jsp"
+                    ],
+                    "attributeProfile": {
+                        "enabled": true,
+                        "alwaysIncludeAttributesInResponse": true
+                    },
+                    "singleLogoutProfile": {
+                        "enabled": true,
+                        "logoutMethod": "BACKCHANNEL",
+                        "idpInitiatedSingleLogout": {
+                            "enabled": false
+                        }
+                    }
+                }
+            }
+        },
+        "templateId": "776a73da-fd8e-490b-84ff-93009f8ede85",
+        "associatedRoles": {
+            "allowedAudience": "APPLICATION",
+            "roles": []
+        },
+        "imageUrl": "https://avatar.vercel.sh/google-workspace"
+    }
+]

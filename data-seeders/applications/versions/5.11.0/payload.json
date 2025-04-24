@@ -1,0 +1,377 @@
+[
+    {
+        "name": "Finance App",
+        "imageUrl": "https://avatar.vercel.sh/finance-app",
+        "inboundProtocolConfiguration": {
+            "oidc": {
+                "state": "ACTIVE",
+                "grantTypes": [
+                    "authorization_code"
+                ],
+                "publicClient": true,
+                "validateRequestObjectSignature": false,
+                "callbackURLs": [
+                    "https://localhost:9443/console/develop/applications/templates"
+                ],
+                "allowedOrigins": []
+            }
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ],
+            "subjectStepId": 1,
+            "attributeStepId": 1
+        },
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false
+        },
+        "description": "Front-end applications which consume REST APIs. Mostly written using scripting languages.",
+        "templateId": "6a90e4b0-fbff-42d7-bfde-1efd98f07cd7"
+    },
+    {
+        "name": "HR Suite",
+        "imageUrl": "https://avatar.vercel.sh/hr-suite",
+        "inboundProtocolConfiguration": {
+            "oidc": {
+                "state": "ACTIVE",
+                "grantTypes": [
+                    "authorization_code"
+                ],
+                "publicClient": true,
+                "validateRequestObjectSignature": false,
+                "callbackURLs": [
+                    "https://localhost:9443/console/develop/applications/templates"
+                ],
+                "allowedOrigins": []
+            }
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ],
+            "subjectStepId": 1,
+            "attributeStepId": 1
+        },
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false
+        },
+        "description": "Front-end applications which consume REST APIs. Mostly written using scripting languages.",
+        "templateId": "6a90e4b0-fbff-42d7-bfde-1efd98f07cd7"
+    },
+    {
+        "name": "Marketing Tool",
+        "imageUrl": "https://avatar.vercel.sh/marketing-tool",
+        "inboundProtocolConfiguration": {
+            "oidc": {
+                "state": "ACTIVE",
+                "grantTypes": [
+                    "authorization_code"
+                ],
+                "publicClient": true,
+                "validateRequestObjectSignature": false,
+                "callbackURLs": [
+                    "https://localhost:9443/console/develop/applications/templates"
+                ],
+                "allowedOrigins": []
+            }
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ],
+            "subjectStepId": 1,
+            "attributeStepId": 1
+        },
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false
+        },
+        "description": "Front-end applications which consume REST APIs. Mostly written using scripting languages.",
+        "templateId": "6a90e4b0-fbff-42d7-bfde-1efd98f07cd7"
+    },
+    {
+        "name": "Support Center",
+        "imageUrl": "https://avatar.vercel.sh/support-center",
+        "inboundProtocolConfiguration": {
+            "oidc": {
+                "state": "ACTIVE",
+                "grantTypes": [
+                    "authorization_code"
+                ],
+                "publicClient": true,
+                "validateRequestObjectSignature": false,
+                "callbackURLs": [
+                    "https://localhost:9443/console/develop/applications/templates"
+                ],
+                "allowedOrigins": []
+            }
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ],
+            "subjectStepId": 1,
+            "attributeStepId": 1
+        },
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false
+        },
+        "description": "Front-end applications which consume REST APIs. Mostly written using scripting languages.",
+        "templateId": "6a90e4b0-fbff-42d7-bfde-1efd98f07cd7"
+    },
+    {
+        "name": "Analytics Dashboard",
+        "imageUrl": "https://avatar.vercel.sh/analytics-dashboard",
+        "inboundProtocolConfiguration": {
+            "oidc": {
+                "state": "ACTIVE",
+                "grantTypes": [
+                    "authorization_code"
+                ],
+                "publicClient": true,
+                "validateRequestObjectSignature": false,
+                "callbackURLs": [
+                    "https://localhost:9443/console/develop/applications/templates"
+                ],
+                "allowedOrigins": []
+            }
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ],
+            "subjectStepId": 1,
+            "attributeStepId": 1
+        },
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false
+        },
+        "description": "Front-end applications which consume REST APIs. Mostly written using scripting languages.",
+        "templateId": "6a90e4b0-fbff-42d7-bfde-1efd98f07cd7"
+    },
+    {
+        "name": "Salesforce",
+        "imageUrl": "https://avatar.vercel.sh/salesforce",
+        "inboundProtocolConfiguration": {
+            "saml": {
+                "manualConfiguration": {
+                    "issuer": "saml2-web-app-salesforce.com",
+                    "assertionConsumerUrls": [
+                        "http://localhost.com:8080/saml2-web-app-salesforce.com/home.jsp"
+                    ],
+                    "enableAssertionQueryProfile": false
+                }
+            }
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ],
+            "subjectStepId": 1,
+            "attributeStepId": 1
+        },
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false
+        },
+        "description": "Regular web applications which use redirection inside browsers.",
+        "templateId": "776a73da-fd8e-490b-84ff-93009f8ede85"
+    },
+    {
+        "name": "Freshdesk",
+        "imageUrl": "https://avatar.vercel.sh/freshdesk",
+        "inboundProtocolConfiguration": {
+            "saml": {
+                "manualConfiguration": {
+                    "issuer": "saml2-web-app-freshdesk.com",
+                    "assertionConsumerUrls": [
+                        "http://localhost.com:8080/saml2-web-app-freshdesk.com/home.jsp"
+                    ],
+                    "enableAssertionQueryProfile": false
+                }
+            }
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ],
+            "subjectStepId": 1,
+            "attributeStepId": 1
+        },
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false
+        },
+        "description": "Regular web applications which use redirection inside browsers.",
+        "templateId": "776a73da-fd8e-490b-84ff-93009f8ede85"
+    },
+    {
+        "name": "Zoho",
+        "imageUrl": "https://avatar.vercel.sh/zoho",
+        "inboundProtocolConfiguration": {
+            "saml": {
+                "manualConfiguration": {
+                    "issuer": "saml2-web-app-zoho.com",
+                    "assertionConsumerUrls": [
+                        "http://localhost.com:8080/saml2-web-app-zoho.com/home.jsp"
+                    ],
+                    "enableAssertionQueryProfile": false
+                }
+            }
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ],
+            "subjectStepId": 1,
+            "attributeStepId": 1
+        },
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false
+        },
+        "description": "Regular web applications which use redirection inside browsers.",
+        "templateId": "776a73da-fd8e-490b-84ff-93009f8ede85"
+    },
+    {
+        "name": "AWS IAM Identity Center (Successor to AWS SSO)",
+        "imageUrl": "https://avatar.vercel.sh/aws",
+        "inboundProtocolConfiguration": {
+            "saml": {
+                "manualConfiguration": {
+                    "issuer": "saml2-web-app-aws-iam.com",
+                    "assertionConsumerUrls": [
+                        "http://localhost.com:8080/saml2-web-app-aws-iam.com/home.jsp"
+                    ],
+                    "enableAssertionQueryProfile": false
+                }
+            }
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ],
+            "subjectStepId": 1,
+            "attributeStepId": 1
+        },
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false
+        },
+        "description": "Regular web applications which use redirection inside browsers.",
+        "templateId": "776a73da-fd8e-490b-84ff-93009f8ede85"
+    },
+    {
+        "name": "Google Workspace",
+        "imageUrl": "https://avatar.vercel.sh/google-workspace",
+        "inboundProtocolConfiguration": {
+            "saml": {
+                "manualConfiguration": {
+                    "issuer": "saml2-web-app-google-workspace.com",
+                    "assertionConsumerUrls": [
+                        "http://localhost.com:8080/saml2-web-app-google-workspace.com/home.jsp"
+                    ],
+                    "enableAssertionQueryProfile": false
+                }
+            }
+        },
+        "authenticationSequence": {
+            "type": "DEFAULT",
+            "steps": [
+                {
+                    "id": 1,
+                    "options": [
+                        {
+                            "idp": "LOCAL",
+                            "authenticator": "basic"
+                        }
+                    ]
+                }
+            ],
+            "subjectStepId": 1,
+            "attributeStepId": 1
+        },
+        "advancedConfigurations": {
+            "discoverableByEndUsers": false
+        },
+        "description": "Regular web applications which use redirection inside browsers.",
+        "templateId": "776a73da-fd8e-490b-84ff-93009f8ede85"
+    }
+]
